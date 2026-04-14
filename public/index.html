@@ -7,12 +7,12 @@
   <title>Little Dino | Safe Book & Video Recommendations for Kids</title>
   <meta name="description" content="Little Dino is a child-friendly app that helps kids discover age-appropriate books and videos through a safe and playful chatbot experience." />
 
-  <link rel="icon" type="image/png" href="/images/little_dino_icon_512.png" />
+  <link rel="icon" type="image/png" href="/public/images/little_dino_icon_512.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/public/css/styles.css" />
   <style>
     .nav-auth { display: flex; align-items: center; gap: 0.7rem; }
     .nav-auth .nav-user { font-weight: 700; color: var(--primary-dark); font-size: 0.9rem; }
@@ -41,7 +41,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="#home" class="brand">
-        <img src="/images/little_dino_icon_512.png" alt="Little Dino logo" class="brand-logo" />
+        <img src="/public/images/little_dino_icon_512.png" alt="Little Dino logo" class="brand-logo" />
         <div class="brand-text">
           <span class="brand-title">Little Dino</span>
           <span class="brand-subtitle">Safe Kids Book & Video Discovery</span>
@@ -109,7 +109,7 @@
 
         <div class="hero-visual">
           <div class="hero-image-card glass-card floating-card dino-logo-wrap">
-            <img src="/images/little_dino_icon_512.png" alt="Little Dino mascot" class="hero-mascot moving-dino-logo" />
+            <img src="/public/images/little_dino_icon_512.png" alt="Little Dino mascot" class="hero-mascot moving-dino-logo" />
           </div>
 
           <div class="floating-pill floating-pill-1">📚 Books</div>
@@ -179,7 +179,7 @@
           <div class="app-phone glass-card">
             <div class="app-phone-top">
               <div class="app-branding">
-                <img src="/images/little_dino_icon_512.png" alt="Little Dino app icon" class="app-avatar" />
+                <img src="/public/images/little_dino_icon_512.png" alt="Little Dino app icon" class="app-avatar" />
                 <div>
                   <h3>Little Dino</h3>
                   <p id="demoStatusText">Online • Ready to help</p>
@@ -211,21 +211,21 @@
               <div class="demo-recommendation-row" id="demoRecommendationRow">
                 <div class="recommendation-card book-card demo-card">
                   <div class="recommendation-badge">BOOK</div>
-                  <img src="/images/sharks-book.jpg" alt="Book recommendation" class="recommendation-image" id="demoBookImage" />
+                  <img src="/public/images/sharks-book.jpg" alt="Book recommendation" class="recommendation-image" id="demoBookImage" />
                   <div class="recommendation-content">
                     <h4 id="demoBookTitle">Shark Adventure</h4>
                     <p id="demoBookDesc">A child-friendly book recommendation will appear here.</p>
-                    <a href="/catalog.html" class="mini-action">Read</a>
+                    <a href="/public/catalog.html" class="mini-action">Read</a>
                   </div>
                 </div>
 
                 <div class="recommendation-card video-card demo-card">
                   <div class="recommendation-badge video-badge">VIDEO</div>
-                  <img src="/images/sharks-video.jpg" alt="Video recommendation" class="recommendation-image" id="demoVideoImage" />
+                  <img src="/public/images/sharks-video.jpg" alt="Video recommendation" class="recommendation-image" id="demoVideoImage" />
                   <div class="recommendation-content">
                     <h4 id="demoVideoTitle">Ocean Animals</h4>
                     <p id="demoVideoDesc">A matching educational video will appear here.</p>
-                    <a href="/catalog.html" class="mini-action">Watch</a>
+                    <a href="/public/catalog.html" class="mini-action">Watch</a>
                   </div>
                 </div>
               </div>
@@ -508,7 +508,7 @@
           </div>
           <div style="display:flex;gap:1rem;flex-wrap:wrap;">
             <a href="https://play.google.com/store/apps/details?id=com.kidsrec.chatbot" class="btn btn-primary" target="_blank">Google Play</a>
-            <a href="/catalog.html" class="btn btn-secondary">Book Catalog</a>
+            <a href="/public/catalog.html" class="btn btn-secondary">Book Catalog</a>
           </div>
         </div>
       </div>
@@ -542,7 +542,7 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="/images/little_dino_icon_512.png" alt="Little Dino footer logo" class="footer-logo" />
+        <img src="/public/images/little_dino_icon_512.png" alt="Little Dino footer logo" class="footer-logo" />
         <div>
           <strong>Little Dino</strong>
           <p>Chatbot App for Book and Video Recommendations for Kids</p>
@@ -550,16 +550,16 @@
       </div>
 
       <div class="footer-links">
-        <a href="/privacy.html">Privacy Policy</a>
-        <a href="/terms.html">Terms of Service</a>
-        <a href="/catalog.html">Book Catalog</a>
+        <a href="/public/privacy.html">Privacy Policy</a>
+        <a href="/public/terms.html">Terms of Service</a>
+        <a href="/public/catalog.html">Book Catalog</a>
       </div>
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="/public/js/script.js"></script>
   <script type="module">
-    import { auth, db, initAuthUI, onAuthStateChanged, signOut, collection, query, orderBy, limit, onSnapshot } from '/js/firebase-config.js';
+    import { auth, db, initAuthUI, onAuthStateChanged, signOut, collection, query, orderBy, limit, onSnapshot } from '/public/js/firebase-config.js';
 
     // Live feedback loader
     (function loadLiveFeedback() {
