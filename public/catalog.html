@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Catalog | Little Dino</title>
 
-  <link rel="icon" type="image/png" href="/images/little_dino_icon_512.png" />
+  <link rel="icon" type="image/png" href="/public/images/little_dino_icon_512.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/public/css/styles.css" />
   <style>
     .catalog-section { padding: 3rem 0 5rem; }
     .catalog-header h1 { font-family: 'Baloo 2', sans-serif; font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 0.3rem; }
@@ -74,7 +74,7 @@
   <header class="site-header">
     <div class="container nav">
       <a href="/" class="brand">
-        <img src="/images/little_dino_icon_512.png" alt="Little Dino logo" class="brand-logo" />
+        <img src="/public/images/little_dino_icon_512.png" alt="Little Dino logo" class="brand-logo" />
         <div class="brand-text">
           <span class="brand-title">Little Dino</span>
           <span class="brand-subtitle">Safe Kids Book & Video Discovery</span>
@@ -89,9 +89,9 @@
 
       <nav class="nav-links" id="navLinks">
         <a href="/">Home</a>
-        <a href="/catalog.html" style="color:var(--primary-dark);">Book Catalog</a>
-        <a href="/feedback.html">Feedback</a>
-        <a href="/login.html" id="nav-login-link" class="nav-cta">Login</a>
+        <a href="/public/catalog.html" style="color:var(--primary-dark);">Book Catalog</a>
+        <a href="/public/feedback.html">Feedback</a>
+        <a href="/public/login.html" id="nav-login-link" class="nav-cta">Login</a>
         <span id="nav-user-name" style="display:none;font-weight:700;color:var(--primary-dark);"></span>
         <button id="nav-logout-btn" style="display:none;background:none;border:1px solid var(--primary);color:var(--primary-dark);padding:0.5rem 1rem;border-radius:999px;font-weight:700;font-size:0.88rem;cursor:pointer;font-family:inherit;">Logout</button>
       </nav>
@@ -102,7 +102,7 @@
     <div id="login-prompt" class="login-prompt-card glass-card" style="display:none;">
       <h2>Login to Browse</h2>
       <p>Sign in to explore our curated collection of books and videos for kids.</p>
-      <a href="/login.html" class="btn btn-primary">Login / Register</a>
+      <a href="/public/login.html" class="btn btn-primary">Login / Register</a>
     </div>
 
     <section id="catalog-content" class="catalog-section" style="display:none;">
@@ -164,7 +164,7 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="/images/little_dino_icon_512.png" alt="Little Dino footer logo" class="footer-logo" />
+        <img src="/public/images/little_dino_icon_512.png" alt="Little Dino footer logo" class="footer-logo" />
         <div>
           <strong>Little Dino</strong>
           <p>Chatbot App for Book and Video Recommendations for Kids</p>
@@ -172,14 +172,14 @@
       </div>
       <div class="footer-links">
         <a href="/">Home</a>
-        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/public/privacy.html">Privacy Policy</a>
       </div>
     </div>
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script src="/public/js/script.js"></script>
   <script type="module">
-    import { auth, db, onAuthStateChanged, signOut, collection, query, where, orderBy, limit, startAfter, getDocs } from '/js/firebase-config.js';
+    import { auth, db, onAuthStateChanged, signOut, collection, query, where, orderBy, limit, startAfter, getDocs } from '/public/js/firebase-config.js';
 
     const grid = document.getElementById('catalog-grid');
     const loginPrompt = document.getElementById('login-prompt');
